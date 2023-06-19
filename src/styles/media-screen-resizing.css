@@ -1,0 +1,39 @@
+@media screen and (max-width: 600px){
+    .d.flex{
+        padding: 30px;
+        align-items: center;
+    }
+    
+    p{
+       font-size: xx-small;
+    }
+
+    h1{
+       font-size: medium;
+    }
+    .input{
+       text-align: center;
+         
+    }
+   ::placeholder{
+       margin-right: 25vw;
+       font-size: 12px;
+   }
+   
+    #result{
+       font-size: 1vw 2vh;
+    }
+   
+    .result{
+       margin-left: 0px;
+    }
+
+    #results{
+        margin-top: -15vh;
+        margin-left: 0;
+        font-size: 12px;
+    }
+    
+   }
+       
+   

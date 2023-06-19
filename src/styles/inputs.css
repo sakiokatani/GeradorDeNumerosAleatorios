@@ -1,0 +1,25 @@
+#minimum, #maximum, #quantityOfNumbers{
+    position: relative;
+    width:35vw;
+    font-size: 25px;
+    padding: 0;
+    text-align: center;
+    font-size: smaller;
+    margin-top: 30px;
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid var(--placeholdercolor);
+    background: transparent;
+    color: var(--fontcolor);
+    font-family: 'Kanit', sans-serif;
+    
+    
+}
+
+::placeholder{
+    color: rgb(27, 27, 27);
+}
+
+.inputs.invalid{
+    border-bottom: 1px solid red;
+}

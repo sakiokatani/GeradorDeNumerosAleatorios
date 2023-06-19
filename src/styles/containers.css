@@ -1,0 +1,66 @@
+.d-flex{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+    background-color: var(--boxbgcolor);
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    border-radius: 6px;
+    font-family: 'Kanit', sans-serif;
+    box-sizing: content-box;
+    padding: 0;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    transform: perspective(20px);
+}
+
+.d{
+    position: relative;
+    background-color: var(--boxbgcolor);
+    border-radius: 6px;
+    width: 100%;
+    min-height: 100%;
+}
+
+.header{
+    color: var(--fontcolor);
+    height: 10%;
+}
+
+.input{
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.btn{
+    margin-top:0;
+}
+
+.result{
+    position: relative;
+    width: 90%;
+    margin-top:20px;
+    margin-right: 0;
+    box-sizing: content-box;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    bottom: -5vh;
+    text-align: center;
+}
+ ::-webkit-scrollbar {
+    width: 8px; /* width of the scrollbar */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #252525; /* color of the thumb */
+    border-radius: 4px; /* rounded corners for the thumb */
+  }
+  
+  /* Optional: To change the track color */
+  ::-webkit-scrollbar-track {
+    background-color: #000000; /* color of the track */
+  }
+
