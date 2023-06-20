@@ -44,7 +44,8 @@ export default function handleUserChoice(min, max, quantity){
         }
             
     console.log(rangeResultArray)
-    let resultString = rangeResultArray.join('  ');
+    let resultString = rangeResultArray.sort(function(a,b){ return a-b});
+     resultString = rangeResultArray.join('  ');
     console.log(resultString)   
     return resultString;
 }
