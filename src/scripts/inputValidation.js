@@ -20,6 +20,10 @@ export default function verifyInput(max, min, quantity){
             field.classList.add('invalid');
             field.setCustomValidity('Todos os campos são obrigatórios');
             field.reportValidity();
+        }else{
+            field.classList.remove('invalid');
+            field.setCustomValidity("");
+            field. reportValidity();
         }
     })
     }

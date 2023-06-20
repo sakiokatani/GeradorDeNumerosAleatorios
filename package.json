@@ -1,7 +1,6 @@
 {
-  "name": "gerador_numeros_loteria",
+  "name": "np",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
@@ -12,5 +11,6 @@
   "dependencies": {
     "nodemon": "^2.0.22",
     "vanilla-tilt": "^1.8.0"
-  }
+  },
+  "description": ""
 }
