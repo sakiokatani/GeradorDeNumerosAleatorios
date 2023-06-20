@@ -96,9 +96,10 @@ function filterAll(resultArray,min ,max, quantity){
         
         if(!filteredAll.includes(number) && filteredAll.length < quantity){
             filteredAll.push(number);
-                if (((j+1) % 2) === 0) {
-                console.log('entered if statement');
-                filteredAll[j]=number+'<br>';
+                for(let index=0; index < filteredAll.length; index++){
+                    if (((index+1) % 7) === 0) {
+                        filteredAll[index]= number +'<br>'
+                    }
                 }
         }
     }

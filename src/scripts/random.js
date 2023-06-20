@@ -1,6 +1,6 @@
 
 
-function randomNumbers(min, max, quantity){
+export function randomNumbers(min, max, quantity){
 
 
     let result = [];
