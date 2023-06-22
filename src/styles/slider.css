@@ -1,0 +1,74 @@
+@import './variables.css';
+
+.range{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sliderValue{
+    visibility: hidden;
+    position: absolute;
+    text-align: center;
+    color: var(--fontcolor);
+    margin-top: 20px;
+}
+
+.range:hover .sliderValue {
+    visibility: visible;
+  }
+  
+
+.sliderValue span{
+    color: var(--fontcolor);
+    position: relative;
+    height: 35px;
+    width:35px;
+    margin-left: -100%;
+    top:-30px;
+    background: transparent;
+    font-weight: 500;
+    transform: translateX(-50%);
+    line-height: 40px;
+    z-index: 2;
+    font-size: small;
+}
+.sliderValue span:after{
+    color: var(--fontcolor);
+    position: absolute;
+    content:"";
+    height:35px;
+    width:35px;
+    left: 50%;
+    background: blueviolet;
+    transform: translateX(-50%) rotate(45deg);
+    border: 2px solid #fff;
+    z-index: -1;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.sliderRange{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: -5%;
+
+}
+
+.range .sliderRange #slider{
+    width: 230px;
+    height: 6px;
+    
+}
+.range .sliderRange #slider ::-webkit-slider-thumb{
+    width: 70%;
+    height: 6px;
+    cursor: pointer;
+    
+}

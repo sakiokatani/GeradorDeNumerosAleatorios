@@ -1,25 +1,23 @@
 import {randomNumbers} from './random.js';
-
-
+import changeSliderText from './slider_changeText.js';
 
 const minInput = document.getElementById('minimum');
 const maxInput = document.getElementById('maximum');
 const quantityInput = document.getElementById('quantityOfNumbers');
-
-
 const slider = document.getElementById('slider');
+const position =  slider.clientWidth - (slider.clientWidth);
+const rangeIndicator= document.querySelector('.valueText');
+    rangeIndicator.style.left = `${position}px`;
 
-slider.onchange=function(){
+slider.onchange = function(){
     slider.classList.add('active');
-    console.log('range changed')
+    changeSliderText();
 }
 
 export default function handleUserChoice(min, max, quantity){
     let resultArray = randomNumbers(min, max, quantity);
         console.log(resultArray);
     let rangeResultArray = [];
-
-
     if (slider.classList.contains('active')){
         
             var range = parseInt(slider.value);
@@ -40,7 +38,7 @@ export default function handleUserChoice(min, max, quantity){
     
     }else{
         console.log('inactive')
-        rangeResultArray = Array.from(filterAll(resultArray,min ,max, quantity))
+        rangeResultArray = Array.from(filterAll(resultArray,min ,max, quantity));
         }
             
     console.log(rangeResultArray)

@@ -1,6 +1,7 @@
 //SCRIPT IMPORTS//
 import handleUserChoice from './slider.js';
 import verifyInput from './inputValidation.js';
+import changeSliderText from './slider_changeText.js';
 
 const minInput = document.getElementById('minimum');
 const maxInput = document.getElementById('maximum');

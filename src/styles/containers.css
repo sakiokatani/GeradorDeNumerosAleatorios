@@ -1,3 +1,5 @@
+@import'./variables.css';
+
 .d-flex{
     display: flex;
     flex-direction: column;
@@ -22,6 +24,8 @@
     border-radius: 6px;
     width: 100%;
     min-height: 100%;
+    text-align: center;
+
 }
 
 .header{

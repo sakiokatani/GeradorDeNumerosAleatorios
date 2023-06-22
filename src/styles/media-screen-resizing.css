@@ -11,6 +11,11 @@
     h1{
        font-size: medium;
     }
+    .range .sliderRange #slider{
+      width: 130px;
+      height: 6px;
+      
+  }
     .input{
        text-align: center;
          
